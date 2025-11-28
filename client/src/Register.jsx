@@ -22,7 +22,7 @@ export default function Register() {
     e.preventDefault()
     console.log(formData)
    if (formData.password===formData.conformPassword){  //
-     axios.post("http://localhost:2000/api/register", formData)//e api ki formdata ni parameter ga pass chesam
+     axios.post(`${import.meta.env.VITE_API_URL}/api/register`, formData)//e api ki formdata ni parameter ga pass chesam
        .then((res) => {
         if (res.status === 200) {
           alert("successfully enter")

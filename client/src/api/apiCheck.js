@@ -1,7 +1,7 @@
 import axios from "axios";   //token check cheyadaniki
 axios.defaults.withCredentials = true;//global ga ekada pedithe login lo pettakaledu
 const API = axios.create({    //edigo axios na kosam oka object ni create chey
-    baseURL: "http://localhost:2000/api" ,   //every request use the base url  default  //annitilo marchakunda e oka dagara maristhe saripoddi
+    baseURL: `${import.meta.env.VITE_API_URL}/api` ,   //every request use the base url  default  //annitilo marchakunda e oka dagara maristhe saripoddi...2000 ane url we replaced this after deployment
     withCredentials:true   //related to cookie
 })
 
