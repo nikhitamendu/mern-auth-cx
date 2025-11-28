@@ -8,7 +8,7 @@ const dashboardRoutes=require("./routes/dashboard.js")
 require("dotenv").config()
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://mern-auth-frontend-3n6h.onrender.com",
     credentials:true , //we write this related to cors
 }))//different origins ni access cheyadaniki
 app.use(express.urlencoded({extended:true}))
